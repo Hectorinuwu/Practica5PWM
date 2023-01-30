@@ -78,7 +78,9 @@ ${COMPILER}:
 #
 # Rules for building the Project Zero Example.
 #
-${COMPILER}/main.axf: ${COMPILER}/main.o
+${COMPILER}/main.axf: ${COMPILER}/EXP1.o
+${COMPILER}/main.axf: ${COMPILER}/EXP2.o
+${COMPILER}/main.axf: ${COMPILER}/EXP3.o
 ${COMPILER}/main.axf: ${COMPILER}/startup_${COMPILER}.o
 ${COMPILER}/main.axf: ${COMPILER}/GPIO.o
 ${COMPILER}/main.axf: ${COMPILER}/PLL.o
